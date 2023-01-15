@@ -455,6 +455,10 @@ footer {
         opacity: 0;
     }
 
+    nav #menu:hover {
+        cursor: pointer;
+    }
+
     nav .fa-bars {
         display: block !important;
         position: absolute;
