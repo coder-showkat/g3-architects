@@ -237,6 +237,11 @@ nav ul li a {
 /* ----------------------
     Data Section
 ----------------------- */
+.data .feature-content {
+    gap: 1.5rem;
+    max-width: 542px;
+}
+
 .data-box-container {
     width: 90%;
     margin: 3rem auto;
@@ -339,6 +344,13 @@ nav ul li a {
 -------------------------- */
 .sponsor {
     text-align: center;
+}
+
+.sponsor .feature-content {
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 542px;
+    margin: 0 auto;
 }
 
 .sponsor-image-container {
