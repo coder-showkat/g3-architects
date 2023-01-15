@@ -147,12 +147,13 @@ nav ul li a {
     width: 100%;
 }
 
-.feature-content {
+.section-content {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     align-items: flex-start;
     justify-content: center;
+    max-width: 542px;
 }
 
 .section-title {
@@ -237,7 +238,7 @@ nav ul li a {
 /* ----------------------
     Data Section
 ----------------------- */
-.data .feature-content {
+.data .section-content {
     gap: 1.5rem;
     max-width: 542px;
 }
@@ -346,7 +347,7 @@ nav ul li a {
     text-align: center;
 }
 
-.sponsor .feature-content {
+.sponsor .section-content {
     align-items: center;
     gap: 1.5rem;
     max-width: 542px;
@@ -397,7 +398,7 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .feature-content {
+    .section-content {
         grid-row: 1;
     }
 
