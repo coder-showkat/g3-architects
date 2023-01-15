@@ -31,13 +31,17 @@ h6 {
     color: #131313;
 }
 
+
+/* All section width */
 section,
 footer {
     width: 90vw;
     margin: 4rem auto;
 }
 
-/* Header section */
+/* -------------------
+    Header section
+--------------------- */
 header {
     width: 100%;
     background-color: rgba(255, 144, 14, 0.1);
@@ -60,6 +64,11 @@ nav {
     cursor: pointer;
 }
 
+nav #menu,
+.fa-bars {
+    display: none;
+}
+
 nav ul {
     display: flex;
     gap: 1rem;
@@ -77,7 +86,9 @@ nav ul li a {
     font-weight: 500;
 }
 
-/* Banner section */
+/* -------------------
+    Banner section 
+------------------*/
 .banner-info {
     width: 75%;
     margin: 3rem auto 0;
@@ -108,7 +119,9 @@ nav ul li a {
 }
 
 
-/* Feature section */
+/* -------------------
+    Feature section
+-------------------- */
 .feature {
     padding: 2rem;
     display: grid;
@@ -147,7 +160,10 @@ nav ul li a {
     color: #FF900E;
 }
 
-/* Feature 2 Section */
+
+/* ---------------------
+    Feature 2 Section
+----------------------- */
 .feature-2 {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
@@ -211,11 +227,9 @@ nav ul li a {
 
 
 
-/* Data Section */
-/* .data {
-    margin: 4rem auto;
-} */
-
+/* ----------------------
+    Data Section
+----------------------- */
 .data-box-container {
     width: 90%;
     margin: 3rem auto;
@@ -262,7 +276,11 @@ nav ul li a {
     width: 100%;
 }
 
-/* Project Section */
+
+
+/* ------------------------
+    Project Section
+------------------------- */
 .project-box-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -307,7 +325,11 @@ nav ul li a {
     z-index: 999;
 }
 
-/* Sponsor Section */
+
+
+/* ---------------------------
+    Sponsor Section
+-------------------------- */
 .sponsor {
     text-align: center;
 }
@@ -326,14 +348,21 @@ nav ul li a {
     filter: grayscale();
 }
 
-/* Footer section */
+
+
+
+/* ----------------------
+    Footer section
+------------------------- */
 footer {
     text-align: center;
     background-color: rgba(255, 144, 14, 0.1);
-    padding: 2rem;
+    padding: 2rem 1rem;
     border-radius: 8px;
 }
 
+
+/* -------------Responsive for Medium device-------------- */
 @media screen and (max-width: 992px) {
     nav {
         flex-direction: column;
@@ -396,7 +425,60 @@ footer {
 
 }
 
+
+/* ---------------------Responsive for small device-------------- */
 @media screen and (max-width: 576px) {
+    .brand-name {
+        font-size: 2rem;
+    }
+
+    .banner-title {
+        font-size: 3rem;
+    }
+
+    nav {
+        flex-direction: row;
+        position: relative;
+    }
+
+    nav #menu {
+        display: block;
+        position: relative;
+        z-index: 2;
+        opacity: 0;
+    }
+
+    nav .fa-bars {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 0;
+        z-index: 1;
+    }
+
+    nav ul {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 0;
+        background-color: #e2ddd4;
+        padding: 1rem 0;
+        border-radius: 8px 0 8px 8px;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+    }
+
+    nav ul li {
+        margin-bottom: 1rem;
+    }
+
+    nav input:checked~ul {
+        width: 8rem;
+        height: 10rem;
+    }
+
     .feature-image-container {
         grid-template-columns: 1fr;
     }
@@ -404,7 +486,6 @@ footer {
     .feature-box-container {
         grid-template-columns: 1fr;
     }
-
 
     .data-box-container {
         grid-template-columns: 1fr;
