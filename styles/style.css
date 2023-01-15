@@ -3,10 +3,6 @@
 /*---------------
 Utilities styles 
 ----------------*/
-:root {
-    font-size: calc(12px + 4 * ((100vw - 320px) / 1120));
-}
-
 * {
     margin: 0;
     padding: 0;
