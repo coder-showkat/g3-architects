@@ -92,6 +92,10 @@ nav ul li a {
 /* -------------------
     Banner section 
 ------------------*/
+.banner {
+    margin-bottom: 1rem;
+}
+
 .banner-info {
     width: 75%;
     margin: 3rem auto 0;
