@@ -64,9 +64,12 @@ nav {
     cursor: pointer;
 }
 
-nav #menu,
-.fa-bars {
+nav #menu {
     display: none;
+}
+
+.fa-bars {
+    display: none !important;
 }
 
 nav ul {
