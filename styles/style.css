@@ -452,7 +452,7 @@ footer {
     }
 
     nav .fa-bars {
-        display: block;
+        display: block !important;
         position: absolute;
         top: 15px;
         right: 0;
