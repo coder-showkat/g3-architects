@@ -31,6 +31,11 @@ h6 {
     color: #131313;
 }
 
+section,
+footer {
+    width: 90vw;
+    margin: 4rem auto;
+}
 
 /* Header section */
 header {
@@ -73,11 +78,6 @@ nav ul li a {
 }
 
 /* Banner section */
-.banner {
-    width: 90vw;
-    margin: 1rem auto;
-}
-
 .banner-info {
     width: 75%;
     margin: 3rem auto 0;
@@ -110,8 +110,6 @@ nav ul li a {
 
 /* Feature section */
 .feature {
-    width: 90vw;
-    margin: 3rem auto;
     padding: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -151,8 +149,6 @@ nav ul li a {
 
 /* Feature 2 Section */
 .feature-2 {
-    width: 90vw;
-    margin: 3rem auto;
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: 3rem;
@@ -216,10 +212,9 @@ nav ul li a {
 
 
 /* Data Section */
-.data {
-    width: 90vw;
+/* .data {
     margin: 4rem auto;
-}
+} */
 
 .data-box-container {
     width: 90%;
@@ -268,11 +263,6 @@ nav ul li a {
 }
 
 /* Project Section */
-.project {
-    width: 90vw;
-    margin: 2rem auto;
-}
-
 .project-box-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -317,6 +307,33 @@ nav ul li a {
     z-index: 999;
 }
 
+/* Sponsor Section */
+.sponsor {
+    text-align: center;
+}
+
+.sponsor-image-container {
+    width: 100%;
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 3rem auto;
+}
+
+.sponsor-image img {
+    filter: grayscale();
+}
+
+/* Footer section */
+footer {
+    text-align: center;
+    background-color: rgba(255, 144, 14, 0.1);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
 @media screen and (max-width: 992px) {
     nav {
         flex-direction: column;
@@ -337,7 +354,7 @@ nav ul li a {
     }
 
     .feature-image-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     .feature-2 {
@@ -380,6 +397,10 @@ nav ul li a {
 }
 
 @media screen and (max-width: 576px) {
+    .feature-image-container {
+        grid-template-columns: 1fr;
+    }
+
     .feature-box-container {
         grid-template-columns: 1fr;
     }
